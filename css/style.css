@@ -1,12 +1,58 @@
 /* Global Styles */
 
+html,
+body {
+  font-family: Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-size: 40px;
+}
+h2 {
+  font-size: 29px;
+}
+h3,
+p {
+  font-size: 19px;
+}
+img {
+  width: 100%;
+  margin: 0 0;
+}
+
 /* Section Styles */
+
+main > section {
+  padding: 65px 25px;
+}
 
 /* Grid Styles */
 
 /* Card Styles */
 
+.card {
+  box-shadow: 0 0 15px 0 gray;
+  border-radius: 5px;
+  padding: 20px 20px;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+.card section {
+  padding: 20px;
+}
+
+.card p {
+  font-size: 17px;
+}
+
 /* Header Styles */
+
+.header {
+  background: linear-gradient(to right, #23517f, #80424d);
+  color: white;
+}
 
 /* Button Styles */
 
