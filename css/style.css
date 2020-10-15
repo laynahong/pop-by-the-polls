@@ -18,7 +18,8 @@ p {
 }
 img {
   width: 100%;
-  margin: 0 0;
+  height: 100%;
+  display: block;
 }
 
 /* Section Styles */
@@ -29,6 +30,20 @@ main > section {
 
 /* Grid Styles */
 
+/* this is only applied on desktop */
+@media (min-width: 768px) {
+  /*this is a grid with two columns*/
+  .grid-1-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  /*this is a grid with four columns*/
+  .grid-1-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 40px;
+  }
+}
 /* Card Styles */
 
 .card {
@@ -47,13 +62,53 @@ main > section {
   font-size: 17px;
 }
 
+/* this is only applied on desktop */
+@media (min-width: 768px) {
+  /* image should fill figure container of card that also has two columns*/
+  .card.grid-1-2 img {
+    object-fit: cover;
+  }
+}
+
 /* Header Styles */
 
 .header {
   background: linear-gradient(to right, #23517f, #80424d);
   color: white;
+  padding: 20px;
+  height: calc(100vh-80px);
+  display: flex;
+  flex-direction: column-reverse;
 }
 
+.header h1 {
+  margin-top: 0px;
+}
+.header a {
+  color: white;
+  text-decoration: none;
+  border: solid 1px white;
+  border-radius: 5px;
+  padding: 20px;
+  display: inline-block;
+}
+
+.header img {
+  opacity: 70%;
+}
+
+@media (min-width: 768px) {
+  .header {
+    height: unset;
+    padding: 100px 20px;
+  }
+
+  /*main header should have a grid gap of 40px*/
+
+  .header.grid-1-2 {
+    grid-gap: 40px;
+  }
+}
 /* Button Styles */
 
 /* Navbar Styles */
