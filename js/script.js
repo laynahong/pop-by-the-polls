@@ -4,10 +4,10 @@
 var hamburger = document.getElementById("hamburger");
 
 // get the menu element
-var menu = document.getElementsById("menu");
+var menu = document.getElementById("menu");
 
 // get the overlay element
-var overlay = document.getElementsById("overlay");
+var overlay = document.getElementById("overlay");
 
 // define toggle function
 function toggleMenu() {
