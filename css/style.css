@@ -20,6 +20,7 @@ img {
   width: 100%;
   height: 100%;
   display: block;
+  padding: 0%;
 }
 /* Section Styles */
 
@@ -48,17 +49,22 @@ main > section {
 .card {
   box-shadow: 0 0 15px 0 gray;
   border-radius: 5px;
-  padding: 20px 20px;
   overflow: hidden;
   margin-bottom: 40px;
 }
 
 .card section {
-  padding: 20px;
+  padding: 20px 20px;
 }
 
 .card p {
   font-size: 17px;
+}
+
+.card img {
+  padding: 0%;
+  width: 100%;
+  margin: 0%;
 }
 
 /* this is only applied on desktop */
@@ -111,14 +117,14 @@ main > section {
 }
 /* Navbar Styles */
 
-nav { 
+nav {
   height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-nav > a > img { 
+nav > a > img {
   height: 30px;
   width: auto;
 }
@@ -130,11 +136,10 @@ nav > ul {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-nav ul li a { 
+nav ul li a {
   text-decoration: none;
   color: black;
   font-weight: bold;
-
 }
 
 #hamburger {
@@ -146,25 +151,25 @@ nav ul li a {
 }
 /* Navbar Desktop Styles */
 
-@media (min-width: 768px) { 
- nav ul { 
-   display: flex;
-   max-width: 500px;
-   width: 100%;
-   justify-content: space-between;
- }
- nav { 
-   padding: 0px 40px;
- }
+@media (min-width: 768px) {
+  nav ul {
+    display: flex;
+    max-width: 500px;
+    width: 100%;
+    justify-content: space-between;
+  }
+  nav {
+    padding: 0px 40px;
+  }
 }
 
 /* Navbar Mobile Styles */
 
 @media (max-width: 768px) {
-  nav { 
+  nav {
     padding: 0px 20px;
   }
-  nav ul li { 
+  nav ul li {
     padding: 20px;
   }
   nav ul {
@@ -181,10 +186,9 @@ nav ul li a {
     z-index: 2;
   }
 
-#menu.active {
+  #menu.active {
     display: block;
   }
-
 
   #hamburger {
     display: block;
@@ -202,7 +206,6 @@ nav ul li a {
     left: 0%;
     right: 0%;
     z-index: l;
-  
   }
 
   #overlay.active {
@@ -219,5 +222,10 @@ footer {
   text-align: center;
 }
 
- footer a:visited {
+footer a:visited {
   color: white;
+}
+
+footer a:link {
+  color: white;
+}
