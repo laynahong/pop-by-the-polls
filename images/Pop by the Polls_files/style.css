@@ -137,7 +137,7 @@ nav ul li a {
 
 }
 
-#hamburger {
+.hamburger {
   display: none;
 }
 
@@ -177,36 +177,21 @@ nav ul li a {
     top: 0%;
     left: 0%;
     padding: 20px;
-    box-sizing: border-box;
-    z-index: 2;
   }
-
-#menu.active {
-    display: block;
-  }
-
-
-  #hamburger {
+  .hamburger {
     display: block;
     height: 30px;
     width: auto;
-    z-index: 2;
   }
   #overlay {
-    display: none;
-    background-color: black;
-    opacity: 60%;
+    display: block;
+    width: 100vh;
+    height: 100vh;
+    color: black;
     position: fixed;
     top: 0%;
-    bottom: 0%;
     left: 0%;
-    right: 0%;
-    z-index: l;
   
-  }
-
-  #overlay.active {
-    display: block;
   }
 }
 
